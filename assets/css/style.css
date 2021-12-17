@@ -165,6 +165,10 @@ button {
         margin: 40px auto;
     }
 
+    #title-container {
+        margin-bottom: 30px;
+    }
+
     #footer-container {
         margin: 20px 0;
     }
