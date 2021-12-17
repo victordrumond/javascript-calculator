@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+    background: linear-gradient(0deg, #363959, #555A8B) fixed;
+}
+
+#main-container {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container {
+    margin-bottom: 40px;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    font-family: "Crimson Text";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#calculator {
+    background: linear-gradient(0deg, #E4E4F1, #FFFFFF) fixed;
+    width: 320px;
+    height: 100%;
+    border-radius: 0px;
+    border: 1px solid grey;
+}
+
+#display-container {
+    display: flex;
+    background-image: linear-gradient(0deg, #333030, #544F4F);
+    padding: 15px 20px;
+    margin: 24px 25px 0;
+    text-align: right;
+    border-radius: 0px;
+    border: 1px solid grey;
+}
+
+#display {
+    width: calc(100% - 15px);
+    color: #E4E4F1;
+    text-align: right;
+    font-size: 30px;
+}
+
+#memory {
+    width: 15px;
+    color: #E4E4F1;
+}
+
+#buttons-container {
+    margin: 20px;
+}
+
+.grid {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "mc m+ m- mr"
+        "ac +/- perc div"
+        "seven eight nine mul"
+        "four five six sub"
+        "one two three add"
+        "c zero dec result"
+    ;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    padding: 10px;
+    width: 62px;
+    height: 48px;
+    color: #333030;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    border: 1px solid grey;
+}
+
+.mem-key {
+    background-image: linear-gradient(0deg, #535050, #878282);
+    color: white;
+}
+
+.mem-key:active {
+    background-image: linear-gradient(180deg, #535050, #878282);
+}
+
+.ac-key {
+    background-image: linear-gradient(0deg, #9D0907, #D60E0A);
+    color: white;
+}
+
+.ac-key:active {
+    background-image: linear-gradient(180deg, #9D0907, #D60E0A);
+}
+
+.op-key {
+    background-image: linear-gradient(0deg, #C87004, #FA900F);
+    color: white;
+}
+
+.op-key:active {
+    background-image: linear-gradient(180deg, #C87004, #FA900F);
+}
+
+.equals-key {
+    background-image: linear-gradient(0deg, #1C5273, #2875A4);
+    color: white;
+}
+
+.equals-key:active {
+    background-image: linear-gradient(180deg, #1C5273, #2875A4);
+}
+
+.extra-key {
+    background-image: linear-gradient(0deg, #E3E0DD, #F6F5F4);
+}
+
+.extra-key:active {
+    background-image: linear-gradient(180deg, #E3E0DD, #F6F5F4);
+}
+
+.number-key {
+    background-image: linear-gradient(0deg, #F5F5F5, #FFFFFF);
+}
+
+.number-key:active {
+    background-image: linear-gradient(180deg, #F5F5F5, #FFFFFF);
+}
+
+.math-icon {
+    font-size: 18px;
+}
+
+#footer-container {
+    margin-top: 30px;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    font-family: "Crimson Text";
+    font-size: 20px;
+}

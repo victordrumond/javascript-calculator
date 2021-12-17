@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <!--Favicon-->
+    <link href="" rel="icon">
+    <!--Font Awesome-->
+    <link href="assets/vendor/font-awesome/css/all.css" rel="stylesheet">
+    <!--CSS file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="main-container">
+        <!--Title-->
+        <div id="title-container">JavaScript Calculator</div>
+        <!--Calculator-->
+        <div id="calculator">
+            <!--Display-->
+            <div id="display-container">
+                <div id="memory"></div>
+                <div id="display">0</div>
+            </div>
+            <!--Buttons-->
+            <div id="buttons-container" class="grid">
+                <button id="mem-clear" class="mem-key" onclick="memoryButtons('mc')">mc</button>
+                <button id="mem-add" class="mem-key" onclick="memoryButtons('m+')">m+</button>
+                <button id="mem-subtract" class="mem-key" onclick="memoryButtons('m-')">m-</button>
+                <button id="mem-recall" class="mem-key" onclick="memoryButtons('mr')">mr</button>
+                <button id="clear" class="ac-key" onclick="clearDisplay()">ac</button>
+                <button id="plus-minus" class="extra-key" onclick="changeSignal()">&#177;</button>
+                <button id="percent" class="extra-key" onclick="handlePercentage()">&#37;</button>
+                <button id="divide" class="op-key" onclick="doOperation('div')"><i class="fas fa-divide math-icon"></i></button>
+                <button id="seven" class="number-key" onclick="updateDisplay('7')">7</button>
+                <button id="eight" class="number-key" onclick="updateDisplay('8')">8</button>
+                <button id="nine" class="number-key" onclick="updateDisplay('9')">9</button>
+                <button id="multiply" class="op-key" onclick="doOperation('mul')"><i class="fas fa-times math-icon"></i></button>
+                <button id="four" class="number-key" onclick="updateDisplay('4')">4</button>
+                <button id="five" class="number-key" onclick="updateDisplay('5')">5</button>
+                <button id="six" class="number-key" onclick="updateDisplay('6')">6</button>
+                <button id="subtract" class="op-key" onclick="doOperation('sub')"><i class="fas fa-minus math-icon"></i></button>
+                <button id="one" class="number-key" onclick="updateDisplay('1')">1</button>
+                <button id="two" class="number-key" onclick="updateDisplay('2')">2</button>
+                <button id="three" class="number-key" onclick="updateDisplay('3')">3</button>
+                <button id="add" class="op-key" onclick="doOperation('add')"><i class="fas fa-plus math-icon"></i></button>
+                <button id="delete" class="extra-key" onclick="deleteLast()">del</button>
+                <button id="zero" class="number-key" onclick="updateDisplay('0')">0</button>
+                <button id="decimal" class="extra-key" onclick="updateDisplay('.')">.</button>
+                <button id="equals" class="equals-key" onclick="doOperation('equals')"><i class="fas fa-equals math-icon"></i></button>
+            </div>
+        </div>
+         <!--Footer-->
+        <div id="footer-container">A freeCodeCamp project by Victor</div>
+    </div>
+
+    <!--jQuery-->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <!--JavaScript file-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
